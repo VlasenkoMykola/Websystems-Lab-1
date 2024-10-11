@@ -34,4 +34,12 @@ public class Controller {
         return "Hello My Debug";
     }
 
+    @GetMapping(
+	value = "/test2",
+	produces="text/plain"
+    )
+    public String test2() {
+        return "Second Test Message";
+    }
+    
 }
